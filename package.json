@@ -1,7 +1,7 @@
 {
   "name": "portfolio-start",
   "version": "0.1.0",
-  "homepage": "https://PidzhakovIlya.github.io/portfolio-start-project",
+  "homepage": "https://PidzhakovIlya.github.io/portfolio",
   "private": true,
   "dependencies": {
     "@babel/core": "7.16.0",
