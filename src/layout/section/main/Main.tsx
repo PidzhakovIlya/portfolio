@@ -10,7 +10,7 @@ export const Main: React.FC = () => {
         <S.Mine>
             <Container>
                 <FlexWrapper align="center" justify="space-around" wrap = "wrap" >
-                    <FlexWrapper direction={"column"} justify={"center"} align={"flex-start"}>
+                    <FlexWrapper direction={"column"} justify={"center"} align={"flex-start"} initialHeight>
                         <S.Title>A WEB DEVELOPER</S.Title>
                         <S.Text>Lorem ipsum dolor sit amet, consectetur adipiscing
                               elit, sed do eiusmod tempor incididunt ut labore et

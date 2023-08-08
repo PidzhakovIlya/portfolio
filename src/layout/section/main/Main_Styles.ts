@@ -39,6 +39,9 @@ const PhotoWrapper = styled.div`
 //       width: 135px;  
 //     }
 //   }
+  @media ${theme.media.mobile}{
+    order: -1;
+  }
 `
 
 const Photo = styled.img`
