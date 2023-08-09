@@ -4,9 +4,11 @@ import {theme} from "../../styles/Theme";
 
 const Slider = styled.div`
   max-width: 500px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  outline: 1px solid #c40849;
 `
 const Slide = styled.div`
   max-width: 500px;
