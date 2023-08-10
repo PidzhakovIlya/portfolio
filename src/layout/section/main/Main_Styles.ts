@@ -12,7 +12,9 @@ const Mine = styled.section`
 
 const Title = styled.h1`
   ${font({weight: 700, Fmax: 64, Fmin: 36, })};
-  
+  p {
+    display: none;
+  }
 `
 const Text = styled.p`
   ${font({weight: 600, Fmax: 36, Fmin: 24,})}

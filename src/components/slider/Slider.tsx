@@ -20,7 +20,7 @@ const Slide = (props: SlidPropsType) => {
 const items = [
     <Slide userName={"ivan ivanow"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi fuga praesentium quam quis quo, repellat repellendusvitae! Architecto asperiores assumenda cupiditate exercitationem laudantium maxime quae quo ullam vel veritatis."} />,
     <Slide userName={"ilya"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi fuga praesentium quis quo, repellat repellendus vitae! Architecto asperiores assumenda cupiditate exercitationem laudantium maxime quae quo ullam vel veritatis."} />,
-    <Slide userName={"@dmitriy"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi fuga praesentiumquam quis quo, repellat repellendus vitae! Architecto asperiores assumenda cupiditate exercitationem laudantium maxime quae quo ullam vel veritatis."} />
+    <Slide userName={"dmitriy"} text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eligendi fuga praesentiumquam quis quo, repellat repellendus vitae! Architecto asperiores assumenda cupiditate exercitationem laudantium maxime quae quo ullam vel veritatis."} />
 ];
 
 export const Slider = () => (
