@@ -6,7 +6,7 @@ import {font} from "../../../styles/Comman";
 //                          ==========Styled Works============
 
 const Works = styled.section`
-
+  position: relative;
 `
 
 const GridWrapper = styled.div`

@@ -4,10 +4,9 @@ import {theme} from "../../../styles/Theme";
 import themPhoto from "../../../assets/images/drawing.svg"
 
 const Mine = styled.section`
-  position: relative;
   min-height: 100vh;
   display: flex;
-  margin-top: 50px;
+  padding-top: 200px;
 `
 
 const Title = styled.h1`

@@ -4,7 +4,7 @@ import {theme} from "../../../styles/Theme";
 
                     // <<<<<<<<<<<Styled Skills>>>>>>>>>>
 const SectionSkills = styled.section`
-
+  position: relative;
 `
 const SkillBarList = styled.div`
 

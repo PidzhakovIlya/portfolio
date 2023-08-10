@@ -8,11 +8,13 @@ import {Testimony} from "./layout/testimony/Testimony";
 import { Contact } from './layout/section/contacts/Contacts';
 import {Footer} from "./layout/footer/Footer";
 import {AboutMe} from "./layout/aboutMe/AboutMe";
+import {Particle} from "./components/particle/Particle";
 
 
 function App() {
     return (
         <div className="App">
+            <Particle/>
             <Header/>
             <Main/>
             <Works/>

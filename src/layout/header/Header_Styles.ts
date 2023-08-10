@@ -9,6 +9,7 @@ const Header = styled.header`
   left: 0;
   right: 0;
   top: 0;
+  opacity: 0.8;
   z-index: 1;
 `
 export const S = {

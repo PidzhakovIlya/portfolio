@@ -82,7 +82,7 @@ export const Works: React.FC = () => {
     }
 
     return (
-        <S.Works>
+        <S.Works id={"projects"}>
             <Container>
                 <SectionTitle>Projects</SectionTitle>
                 <TabsMenu tabsItems={tabsItems}

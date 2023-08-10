@@ -4,14 +4,14 @@ import {FlexWrapper} from "../../../components/FlexWrapper";
 import {Container} from "../../../components/Container";
 import {S} from "./Main_Styles"
 import Typewriter from 'typewriter-effect';
+import Tilt from 'react-parallax-tilt';
 
 export const Main: React.FC = () => {
     return (
         <S.Mine>
             <Container>
-                <FlexWrapper align="center" justify="space-around" wrap = "wrap" >
+                <FlexWrapper align="center" justify="space-around" wrap="wrap">
                     <FlexWrapper direction={"column"} justify={"center"} align={"flex-start"} initialHeight>
-                        {/*<S.Title>A WEB DEVELOPER</S.Title>*/}
                         <S.Title>
                             <p>A WEB DEVELOPER</p>
                             <Typewriter
@@ -23,13 +23,15 @@ export const Main: React.FC = () => {
                             />
                         </S.Title>
                         <S.Text>Lorem ipsum dolor sit amet, consectetur adipiscing
-                              elit, sed do eiusmod tempor incididunt ut labore et
-                             dolore magna aliqua. </S.Text>
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. </S.Text>
                         <button>Let’s begin</button>
                     </FlexWrapper>
-                    <S.PhotoWrapper>
-                        <S.Photo src={myPhoto} alt="my photo"/>
-                    </S.PhotoWrapper>
+                    <Tilt>
+                        <S.PhotoWrapper>
+                            <S.Photo src={myPhoto} alt="my photo"/>
+                        </S.PhotoWrapper>
+                    </Tilt>
                 </FlexWrapper>
             </Container>
         </S.Mine>
