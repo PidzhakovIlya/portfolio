@@ -1,6 +1,7 @@
 import styled, {css} from "styled-components";
 import {theme} from "../../../styles/Theme";
 import {Link} from "react-scroll";
+import {font} from "../../../styles/Comman";
 
 //                     =========Menu========
 const Mask = styled.span`
@@ -12,6 +13,7 @@ const Mask = styled.span`
   overflow: hidden;
   //outline: 1px solid red;
    color: ${theme.colors.font};
+  transition: ${theme.animations.transition};
 
   & + & {
     top: 50%;
@@ -26,7 +28,7 @@ const MenuItem = styled.li`
 
 `
 const NavLink = styled(Link)`
-  font-size: 30px;
+  font-size: ${font({Fmax: 30, Fmin: 18})};
   font-weight: 400;
   color: transparent;
   cursor: pointer;
@@ -42,7 +44,7 @@ const NavLink = styled(Link)`
     right: -10px;
     z-index: 1;
     transform: scale(0);
-    transition: 0.3s;
+    transition: ${theme.animations.transition};
   }
 
   &:hover {
@@ -81,24 +83,31 @@ const MobileMenuPopup = styled.div<{$isOpen: boolean}>`
   background-color: ${theme.colors.secondaryBg};
   opacity: 0.8; 
   z-index: 99999;
-  display: none;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: .5s ease-in-out;
 
-  ${props => props.$isOpen && css`
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  `}
   
   ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 98px;
+    gap: 10px;
     list-style: none;
+    transition: 1s ease-in-out;
   }
+
+  ${props => props.$isOpen && css`
+    transform: translateY(0);
+    
+    & ul {
+      gap: 98px;
+    }
+  
+  `}
 `
 
 const BurgerButton = styled.button<{$isOpen: boolean}>`

@@ -26,6 +26,7 @@ const items = [
 export const Slider = () => (
     <S.Slider>
         <AliceCarousel
+            autoWidth
             mouseTracking
             items={items}
         />

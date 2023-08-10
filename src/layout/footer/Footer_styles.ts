@@ -14,6 +14,11 @@ const Footer = styled.footer`
     text-align: start;
     text-decoration: none;
     color: #fff;
+    transition: ${theme.animations.transition};
+    
+    &:hover {
+      transform: translateY(-10px);
+    }
   }
 
   @media ${theme.media.tablet} {
@@ -21,9 +26,6 @@ const Footer = styled.footer`
     padding: 20px 0;
     justify-content: center;
     
-    & SocialList{
-      width: 30px;
-    }
     
     &  ${FlexWrapper} {
       

@@ -40,6 +40,13 @@ export const GlobalStyle = createGlobalStyle`
     color: #FFF;
     font-family: Poppins, sans-serif;
     font-size: 20px;
+    opacity: 1;
+    transition: ${theme.animations.transition};
+    
+    &:hover {
+      cursor: pointer;
+      opacity: 0.6;
+    }
   }
   
   section {
