@@ -1,5 +1,4 @@
 import './App.css';
-import styled from 'styled-components';
 import {Header} from './layout/header/Header';
 import {Main} from './layout/section/main/Main';
 import {MySkills} from './layout/section/skills/Skills';
@@ -9,6 +8,7 @@ import { Contact } from './layout/section/contacts/Contacts';
 import {Footer} from "./layout/footer/Footer";
 import {AboutMe} from "./layout/aboutMe/AboutMe";
 import {Particle} from "./components/particle/Particle";
+import {GoTopBtn} from "./components/goTopBtn/GoTopBtn";
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
             <Contact/>
             {/*<AboutMe/>*/}
             <Footer/>
+            <GoTopBtn/>
         </div>
     );
 }
