@@ -30,18 +30,20 @@ export const TabsMenu = (props: TabsMenuPropsType ) => {
 const StyledTabMenu = styled.nav`
   ul {
     display: grid;
-    grid-template-columns: repeat(3, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-content: center;
     align-content: center;
     align-items: center;
     justify-items: center;
     gap: 98px;
     list-style: none;
-    margin-bottom: 40px;
+    margin: 0 auto 80px;
+    max-width: 1200px;
+    width: 100%;
   }
 `
 const ListItem = styled.li`
-
+  
 `
 const Link = styled.a<{ active?: boolean }>`
   font-size: ${font({Fmax: 36, Fmin: 24})};
