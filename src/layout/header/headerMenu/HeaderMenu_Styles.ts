@@ -11,8 +11,7 @@ const Mask = styled.span`
   display: inline-block;
   height: 50%;
   overflow: hidden;
-  //outline: 1px solid red;
-   color: ${theme.colors.font};
+  color: ${theme.colors.font};
   transition: ${theme.animations.transition};
 
   & + & {
@@ -32,7 +31,7 @@ const NavLink = styled(Link)`
   font-weight: 400;
   color: transparent;
   cursor: pointer;
-  
+
   &::before {
     content: "";
     display: inline-block;
@@ -47,7 +46,7 @@ const NavLink = styled(Link)`
     transition: ${theme.animations.transition};
   }
 
-  &:hover {
+  &:hover, &.active {
     &::before {
       transform: scale(1);
     }
@@ -59,7 +58,6 @@ const NavLink = styled(Link)`
       & + ${Mask} {
         transform: skewX(12deg) translateX(-5px);
       }
-
     }
   }
 `
