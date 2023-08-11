@@ -8,7 +8,6 @@ const Slider = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 1px solid #c40849;
 `
 const Slide = styled.div`
   max-width: 500px;
